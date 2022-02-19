@@ -1,4 +1,4 @@
-# 2022 Google Summer of Code (GSoC) Project: Taskflow
+# 2022 Google Summer of Code (GSoC) Overview
 
 Parallel programming has advanced many of today's scientific computing projects to a new level.
 However, writing a program that utilizes parallel and heterogeneous computing resources
