@@ -31,6 +31,8 @@ We will place the result in a new repository, namely `Benchmarks`,
 under the [Taskflow Organization](https://github.com/taskflow). 
 Publications in related conferences or arXiv journals are possible.
 
+Expected time commitment: 350 hours
+
 ## Enhance Pipeline Infrastructure
 
 Taskflow has introduced a new *task-parallel* pipeline programming framework in [v3.3](https://taskflow.github.io/taskflow/release-3-3-0.html).
@@ -46,6 +48,8 @@ We have identified three specific tasks:
 
 The implementation will be integrated into the core of Taskflow as a new algorithm module.
 Publications in related conferences or arXiv journals are possible.
+
+Expected time commitment: 350 hours
 
 # Mentors
 
