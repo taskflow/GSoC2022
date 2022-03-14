@@ -16,7 +16,7 @@ to facilitate its research and development:
 
 Timeline of GSoC is available [here](https://developers.google.com/open-source/gsoc/timeline).
 
-# Project #1: Enhance Benchmarking Environment
+# Project 1: Enhance Benchmarking Environment
 
 The project aims to enhance the benchmarking environment of Taskflow by adding 
 more realistic and reproducible testcases to the repository.
@@ -65,7 +65,7 @@ the Taskflow core functionalities.
 Participants in this project will gain much practical and hands-on experience 
 of parallel programming and underatand the pros and cons of mainstream parallel programming tools.
 
-# Project #2: Enhance Pipeline Infrastructure
+# Project 2: Enhance Pipeline Infrastructure
 
 The project aims to enhance the the pipeline programming infrastructure of Taskflow by adding 
 a data abstraction layer with high scheduling performance.
