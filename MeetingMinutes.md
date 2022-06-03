@@ -7,7 +7,9 @@
   + you may not need to derive your tf::DataPipeline from tf::Pipeline for now; duplicate the code and modify it is ok at this stage
 - [ ] start thinking about unittest 
   + take a look at [doctest](https://github.com/doctest/doctest)
-  + take a look at taskflow/unittests/parallel_pipelines.cpp
+  + take a look at taskflow/unittests/pipelines.cpp
+  + create a unittest unittests/data_pipelines.cpp and start writing some simple and complex unittests
+  + make sure you add the data_pipelines.cpp unittest into unittests/CMakeLists.txt
 
 ```
 ~$ cd build
