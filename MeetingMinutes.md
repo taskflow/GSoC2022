@@ -8,7 +8,7 @@ General Items:
 + [ ] start to benchmakr your `tf::DataPipeline`
   1. is std::variant good enough for holding the data without any issue?
   2. create a new benchmark folder in `taskflow/benchmarks/data_pipeline` (take a look at `taskflow/benchmarks/linear_pipeline`)
-  3. add the corresponding section in `benchmarks/CMakeLists.txt` to compile your data_pipeline benchmark
+  3. add the corresponding section in `benchmarks/CMakeLists.txt` to compile your data_pipeline benchmark (see the [tutorial here](https://taskflow.github.io/taskflow/BenchmarkTaskflow.html))
   4. think about a benchmark design of up to 16 pipes with some types you want to benchmark (e.g., int->std::string->...->std::vector<int>)
   5. implement both your `tf::DataPipeline` and `tbb::parallel_pipeline`  
   6. try to generate some plots and paste them here
