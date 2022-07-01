@@ -3,6 +3,27 @@
 General Items:
   + [ ] learn C++ by watching videos at [CppCon](https://www.youtube.com/user/CppCon/playlists) 
 
+## 06/30/2022 (regular meeting)
+
++ [ ] always use `std::decay_t` to store the data and pass the data in reference to user's callable
+```cpp
+#include <iostream>
+#include <functional>
+
+int main() {
+
+  // user's perspective
+  auto lambda = [] ( const int& )  {  };
+  
+  // your perspective - DataPipeline
+  using C = decltype(lambda);
+  using T = int;
+
+  //make_datapipe<int&, std::string&> ==> make_datapipe<int, std::string>, here we always decay for storing the data
+  static_assert(std::is_invocable_v<C, T&>, "");  // here, we always call user's callable passing the data by reference
+}
+```
+
 ## 06/23/2022 (regular meeting)
 
 + [ ] start to benchmakr your `tf::DataPipeline`
