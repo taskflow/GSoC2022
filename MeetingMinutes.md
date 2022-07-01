@@ -12,6 +12,8 @@ General Items:
   4. think about a benchmark design of up to 16 pipes with some types you want to benchmark (e.g., int->std::string->...->std::vector<int>)
   5. implement both your `tf::DataPipeline` and `tbb::parallel_pipeline`  
   6. try to generate some plots and paste them here
+    ![](https://github.com/taskflow/GSoC2022/blob/main/num_threads%3D24%20num_rounds%3D1%20num_lines%3D8%20pipes%3Dssssssss.png)
+    ![](https://github.com/taskflow/GSoC2022/blob/main/num_threads%3D24%20num_rounds%3D1%20num_lines%3D8%20pipes%3Dsppppppp.png)
   
 + [ ] study the interface of `tf::ScalablePipeline` and create a `tf::ScalableDataPipeline`
   + study `examples/parallel_scalable_pipeline.cpp`
