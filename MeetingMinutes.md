@@ -28,11 +28,16 @@ int main() {
   2. num_lines == num_threads {4, 8, 16, 24}
   3. num_rounds should be at least 3 to amortize variation
   4. tbb vs taskflow (reference version)
+  5. paste your figure over here
 + [ ] think about why sppppp..pp is slower than ssssss..ss (ideally, more p should be faster)
 ```cpp
 alignas(2*TF_CACHELINE_SIZE) int int_1_on_first_cacheline;    // accessing int_1 by thread 1 is guaranteed to be independent of accessing int_2 by thread2
 alignas(2*TF_CACHELINE_SIZE) int int_2_on_second_cacheline;   
 ```
++ [ ] I think for scalable_data_pipeline using the pointer (void*)-based method is a good idea
+  1. of course, you can have a look at the newest [std::any](https://en.cppreference.com/w/cpp/utility/any)
+  2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
+  3. why not we just combine everything together in your design to have just one virtual layer
 
 ## 06/23/2022 (regular meeting)
 
