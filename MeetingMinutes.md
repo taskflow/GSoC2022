@@ -23,10 +23,20 @@ int main() {
   static_assert(std::is_invocable_v<C, T&>, "");  // here, we always call user's callable passing the data by reference
 }
 ```
++ [ ] do more experiments to compare different combinations of s and p
+  1. {ssss, sppp, ssssssss, sppppppp, ssssssssssssssss, sppppppppppppppp}
+  2. num_lines == num_threads {4, 8, 16, 24}
+  3. num_rounds should be at least 3 to amortize variation
+  4. tbb vs taskflow (reference version)
++ [ ] think about why sppppp..pp is slower than ssssss..ss (ideally, more p should be faster)
+```cpp
+alignas(2*TF_CACHELINE_SIZE) int int_1_on_first_cacheline;    // accessing int_1 by thread 1 is guaranteed to be independent of accessing int_2 by thread2
+alignas(2*TF_CACHELINE_SIZE) int int_2_on_second_cacheline;   
+```
 
 ## 06/23/2022 (regular meeting)
 
-+ [ ] start to benchmakr your `tf::DataPipeline`
++ [x] start to benchmakr your `tf::DataPipeline`
   1. is std::variant good enough for holding the data without any issue?
   2. create a new benchmark folder in `taskflow/benchmarks/data_pipeline` (take a look at `taskflow/benchmarks/linear_pipeline`)
   3. add the corresponding section in `benchmarks/CMakeLists.txt` to compile your data_pipeline benchmark (see the [tutorial here](https://taskflow.github.io/taskflow/BenchmarkTaskflow.html))
