@@ -21,6 +21,7 @@ Scalable Data Pipeline Design
 ```
 ~$ ssh phrygiangates@twhuang-server-01.ece.utah.edu
 ```
++ [ ] upload your experiment data 
 
 ## 06/30/2022 (regular meeting)
 
