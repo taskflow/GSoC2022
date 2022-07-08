@@ -22,7 +22,7 @@ Scalable Data Pipeline Design
 ~$ ssh phrygiangates@twhuang-server-01.ece.utah.edu
 ```
 + [ ] upload your experiment data slide
-+ [ ] run your unittest with thread sanitizer enabled
++ [ ] run your unittest with [thread sanitizer](https://clang.llvm.org/docs/ThreadSanitizer.html) enabled
 ```
 cmake ../ -DCMAKE_CXX_FLAGS="-fsanitize=thread"
 ```
