@@ -24,7 +24,7 @@ Scalable Data Pipeline Design
 + [ ] upload your experiment data slide
 + [ ] run your unittest with thread sanitizer enabled
 ```
-cmake ../ -DCMAKE_CXX_FLAGS="-fsanitize=address -fsanitize=leak -g"
+cmake ../ -DCMAKE_CXX_FLAGS="-fsanitize=thread"
 ```
 
 ## 06/30/2022 (regular meeting)
