@@ -9,20 +9,31 @@ Scalable Data Pipeline Design
   2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
   3. why not we just combine everything together in your design to have just one virtual layer
 
+## 07/21/2022 (regular meeting)
+
++ [ ] use profiler to find out why tbb is faster under 4 and 8 threads (cache hit rate?)
+  1. this is a reseach question => find problem and then solve the problem
++ [ ] rethink if we really need `char padding[CLPAD(sizeof(T))]` in your `struct padded`
+  1. you can run the experiment again to see if the data is the same
+  2. you can run `/bin/time` to check the memory
++ [ ] rename `make_datapipe` to `make_data_pipe`
++ [ ] upload your experiment data slide
++ [ ] measure the memory data between taskflow and tbb using [/user/bin/time](https://stackoverflow.com/questions/774556/peak-memory-usage-of-a-linux-unix-process)
++ [ ] we will go through the midterm evaluation using email when it is open
+
 ## 07/07/2022 (regular meeting)
 
-+ [ ] Try using a bigger data type (as opposed to int) in your `data_pipeline_dev.hpp`
-+ [ ] Modify your work() function to include frequent access to the referenced argument (data) to increase the effect of false sharing
++ [x] Try using a bigger data type (as opposed to int) in your `data_pipeline_dev.hpp`
++ [x] Modify your work() function to include frequent access to the referenced argument (data) to increase the effect of false sharing
   1. do not write things like static loops that compiler can optimize 
     + `for(int i=0; i<100; i++) data++; ` => `data += 100`
     + call some library functions such as `std::pow`
   2. make more experiments 
-+ [ ] try logging into the server
++ [x] try logging into the server
 ```
 ~$ ssh phrygiangates@twhuang-server-01.ece.utah.edu
 ```
-+ [ ] upload your experiment data slide
-+ [ ] run your unittest with [thread sanitizer](https://clang.llvm.org/docs/ThreadSanitizer.html) enabled
++ [x] run your unittest with [thread sanitizer](https://clang.llvm.org/docs/ThreadSanitizer.html) enabled
 ```
 cmake ../ -DCMAKE_CXX_FLAGS="-fsanitize=thread"
 ```
