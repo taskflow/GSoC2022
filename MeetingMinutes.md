@@ -9,17 +9,22 @@ Scalable Data Pipeline Design
   2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
   3. why not we just combine everything together in your design to have just one virtual layer
 
+## 07/28/2022 (regular meeting)
+
++ [ ] normal_vs_efficient => make plot to compare Taskflow with TBB
++ [ ] start writing documentation for `tf::data_pipeline` based on the instructions [here](https://taskflow.github.io/taskflow/install.html#BAIBuildDocumentation)
+
 ## 07/21/2022 (regular meeting)
 
-+ [ ] use profiler to find out why tbb is faster under 4 and 8 threads (cache hit rate?)
++ [x] use profiler to find out why tbb is faster under 4 and 8 threads (cache hit rate?)
   1. this is a reseach question => find problem and then solve the problem
-+ [ ] rethink if we really need `char padding[CLPAD(sizeof(T))]` in your `struct padded`
++ [x] rethink if we really need `char padding[CLPAD(sizeof(T))]` in your `struct padded`
   1. you can run the experiment again to see if the data is the same
   2. you can run `/bin/time` to check the memory
-+ [ ] rename `make_datapipe` to `make_data_pipe`
-+ [ ] upload your experiment data slide
-+ [ ] measure the memory data between taskflow and tbb using [/user/bin/time](https://stackoverflow.com/questions/774556/peak-memory-usage-of-a-linux-unix-process)
-+ [ ] we will go through the midterm evaluation using email when it is open
++ [x] rename `make_datapipe` to `make_data_pipe`
++ [x] upload your experiment data slide
++ [x] measure the memory data between taskflow and tbb using [/user/bin/time](https://stackoverflow.com/questions/774556/peak-memory-usage-of-a-linux-unix-process)
++ [x] we will go through the midterm evaluation using email when it is open
 
 ## 07/07/2022 (regular meeting)
 
