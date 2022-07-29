@@ -16,6 +16,7 @@ Scalable Data Pipeline Design
   1. doxygen/algorithms/data_pipeline.dox
   2. add data_pipeline.dox in doxygen/Doxyfile
 + [ ] synchronize your local repo with the remote (both dev and master)
++ [ ] study taskflow's scheduling algorithm [here](https://tsung-wei-huang.github.io/papers/icpads20.pdf)
 
 ## 07/21/2022 (regular meeting)
 
