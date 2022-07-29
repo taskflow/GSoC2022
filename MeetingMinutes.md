@@ -13,6 +13,9 @@ Scalable Data Pipeline Design
 
 + [ ] normal_vs_efficient => make plot to compare Taskflow with TBB
 + [ ] start writing documentation for `tf::data_pipeline` based on the instructions [here](https://taskflow.github.io/taskflow/install.html#BAIBuildDocumentation)
+  1. doxygen/algorithms/data_pipeline.dox
+  2. add data_pipeline.dox in doxygen/Doxyfile
++ [ ] synchronize your local repo with the remote (both dev and master)
 
 ## 07/21/2022 (regular meeting)
 
