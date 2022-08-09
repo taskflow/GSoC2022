@@ -9,14 +9,23 @@ Scalable Data Pipeline Design
   2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
   3. why not we just combine everything together in your design to have just one virtual layer
 
+## 08/04/2022 (regular meeting)
+
++ [ ] revised your documentation and in-code documentation
++ [ ] start setting up PARSEC benchmark
+  1. read the [doc](https://parsec.cs.princeton.edu/download/tutorial/3.0/parsec-tutorial.pdf)
+  2. focus on ferret and dedup
+  3. run the script and study the TBB pipeline implementation
+  4. implement a TBB equivalent using Taskflow (may take some time)
+
 ## 07/28/2022 (regular meeting)
 
-+ [ ] normal_vs_efficient => make plot to compare Taskflow with TBB
-+ [ ] start writing documentation for `tf::data_pipeline` based on the instructions [here](https://taskflow.github.io/taskflow/install.html#BAIBuildDocumentation)
++ [x] normal_vs_efficient => make plot to compare Taskflow with TBB
++ [x] start writing documentation for `tf::data_pipeline` based on the instructions [here](https://taskflow.github.io/taskflow/install.html#BAIBuildDocumentation)
   1. doxygen/algorithms/data_pipeline.dox
   2. add data_pipeline.dox in doxygen/Doxyfile
-+ [ ] synchronize your local repo with the remote (both dev and master)
-+ [ ] study taskflow's scheduling algorithm [here](https://tsung-wei-huang.github.io/papers/icpads20.pdf)
++ [x] synchronize your local repo with the remote (both dev and master)
++ [x] study taskflow's scheduling algorithm [here](https://tsung-wei-huang.github.io/papers/icpads20.pdf)
 
 ## 07/21/2022 (regular meeting)
 
