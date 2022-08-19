@@ -9,11 +9,15 @@ Scalable Data Pipeline Design
   2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
   3. why not we just combine everything together in your design to have just one virtual layer
 
+## 08/19/2022 (regular meeting)
++ [ ] keep tracking of the error message of tbb implementation
++ [ ] implement a taskflow version parsec and compare the result with the default version(pthread) on benchmark ferret
+
 ## 08/12/2022 (regular meeting)
 
-+ [ ] update your `data_pipeline.hpp` and documentation with the upstream dev branch
++ [x] update your `data_pipeline.hpp` and documentation with the upstream dev branch
   + next week we will check in your code
-+ [ ] upload your newest experimental result slide
++ [x] upload your newest experimental result slide
 + [ ] start setting up PARSEC benchmark
   1. read the [doc](https://parsec.cs.princeton.edu/download/tutorial/3.0/parsec-tutorial.pdf)
   2. focus on ferret and dedup
