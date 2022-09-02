@@ -9,9 +9,21 @@ Scalable Data Pipeline Design
   2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
   3. why not we just combine everything together in your design to have just one virtual layer
 
+## 09/01/2022 (regular meeting)
+
++ [ ] collect data for ferret and compare runtim/memory between taskflow and tbb
+  1. measure at different numbers of threads (1, 2, 4, 8) = number of lines
+  2. organize data in a pptx/pdf
++ [ ] continue to make dedup work
+  1. try to find the reason for segfault
+  2. if 1 doesn't work, can we implement the tbb version on PARSEC 3.0 based on the implementation you had in PARSEC 2.1 (optimal)
+  3. I think #2 is optimal because eventually you can release your code for other people to use and compare
+  4. if none of the above work, we can implement the tbb version ourself ... (nested pipeline parallelism)
+
 ## 08/19/2022 (regular meeting)
-+ [ ] keep tracking of the error message of tbb implementation
-+ [ ] implement a taskflow version parsec and compare the result with the default version(pthread) on benchmark ferret
+
++ [x] keep tracking of the error message of tbb implementation
++ [x] implement a taskflow version parsec and compare the result with the default version(pthread) on benchmark ferret
 
 ## 08/12/2022 (regular meeting)
 
