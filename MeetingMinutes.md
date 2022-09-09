@@ -9,6 +9,14 @@ Scalable Data Pipeline Design
   2. however, I don't recommend using `std::any` because it is essentially another layer of virtual call
   3. why not we just combine everything together in your design to have just one virtual layer
 
+## 09/08/2022 (regular meeting)
+
++ [ ] submit your evaluation by 9/12
+  1. Task 1: give the RUL to your data_pipeline.hpp implementation 
+  2. Task 2: create a folder under this GSoC2022 repo with the name "PARSEC-v3" and "PARSEC-v2" and document how to compile it and run it in the README
+    + ferret can run (version 3.0)
+    + dedup can run but sometimes it get segfault (version 2.0) - still document how to run it but mention in what occasion we will see segfault
+
 ## 09/01/2022 (regular meeting)
 
 + [ ] collect data for ferret and compare runtim/memory between taskflow and tbb
