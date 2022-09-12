@@ -13,7 +13,8 @@ Scalable Data Pipeline Design
 
 + [ ] submit your evaluation by 9/12
   1. Task 1: give the RUL to your data_pipeline.hpp implementation 
-  2. Task 2: create a folder under this GSoC2022 repo with the name "PARSEC-v3" and "PARSEC-v2" and document how to compile it and run it in the README
+    + Here is the [link](https://github.com/taskflow/taskflow/blob/master/taskflow/algorithm/data_pipeline.hpp)
+  3. Task 2: create a folder under this GSoC2022 repo with the name "PARSEC-v3" and "PARSEC-v2" and document how to compile it and run it in the README
     + ferret can run (version 3.0)
     + dedup can run but sometimes it get segfault (version 2.0) - still document how to run it but mention in what occasion we will see segfault
         | ![](https://github.com/taskflow/GSoC2022/blob/main/dedup.png) |
@@ -22,13 +23,13 @@ Scalable Data Pipeline Design
 
 ## 09/01/2022 (regular meeting)
 
-+ [ ] collect data for ferret and compare runtim/memory between taskflow and tbb
++ [x] collect data for ferret and compare runtim/memory between taskflow and tbb
   1. measure at different numbers of threads (1, 2, 4, 8) = number of lines
   2. organize data in a pptx/pdf
       | ![](https://github.com/taskflow/GSoC2022/blob/main/ferret.png) |
       |:--:|
       | <b>performance on ferret</b>|
-+ [ ] continue to make dedup work
++ [x] continue to make dedup work
   1. try to find the reason for segfault
   2. if 1 doesn't work, can we implement the tbb version on PARSEC 3.0 based on the implementation you had in PARSEC 2.1 (optimal)
   3. I think #2 is optimal because eventually you can release your code for other people to use and compare
