@@ -22,6 +22,9 @@ Scalable Data Pipeline Design
 + [ ] collect data for ferret and compare runtim/memory between taskflow and tbb
   1. measure at different numbers of threads (1, 2, 4, 8) = number of lines
   2. organize data in a pptx/pdf
+      | ![](https://github.com/taskflow/GSoC2022/blob/main/ferret.png) |
+      |:--:|
+      | <b>performance on ferret</b>|
 + [ ] continue to make dedup work
   1. try to find the reason for segfault
   2. if 1 doesn't work, can we implement the tbb version on PARSEC 3.0 based on the implementation you had in PARSEC 2.1 (optimal)
